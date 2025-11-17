@@ -1,85 +1,114 @@
 body {
-  background: #f5f6fa;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
 }
 
-.container {
+.app-wrapper {
   max-width: 900px;
   margin: auto;
   padding: 20px;
 }
 
-.title {
+.header {
   text-align: center;
-  color: #2c3e50;
+  font-size: 38px;
+  font-weight: bold;
+  color: white;
   margin-bottom: 30px;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.2);
 }
 
-.card {
-  background: #fff;
+.glass-card {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
   padding: 20px;
   margin-bottom: 25px;
-  border-radius: 8px;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
-.input {
+.section-title {
+  font-size: 22px;
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+.field {
   width: 100%;
   padding: 12px;
-  margin-top: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccd1d9;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-.btn {
-  background: #3498db;
-  color: white;
-  padding: 10px 18px;
+  margin-bottom: 12px;
+  border-radius: 8px;
   border: none;
-  cursor: pointer;
   font-size: 16px;
-  border-radius: 5px;
-  margin-top: 10px;
+  outline: none;
+  background: rgba(255,255,255,0.7);
 }
 
-.btn:hover {
-  background: #2980b9;
+.primary-btn {
+  background: #003e9c;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-.table {
+.primary-btn:hover {
+  background: #002970;
+}
+
+.secondary-btn {
+  background: #00b894;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.secondary-btn:hover {
+  background: #009874;
+}
+
+.styled-table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
-.table th {
-  background: #3498db;
+.styled-table th {
+  background: #003e9c;
   color: white;
   padding: 12px;
 }
 
-.table td {
+.styled-table td {
   padding: 12px;
-  border-bottom: 1px solid #ddd;
+  background: rgba(255,255,255,0.7);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
-.table tr:hover {
-  background: #ecf0f1;
+.styled-table tr:hover {
+  background: rgba(255,255,255,0.9);
 }
 
-.search-box {
-  margin-top: 15px;
+.search-row {
+  display: flex;
+  gap: 12px;
+}
+
+.result-box {
+  background: rgba(255,255,255,0.6);
   padding: 15px;
-  background: #f0f9ff;
-  border-left: 4px solid #3498db;
-  border-radius: 5px;
+  border-radius: 10px;
+  margin-top: 15px;
 }
 
-.error-text {
+.error-msg {
+  font-size: 18px;
   color: red;
   font-weight: bold;
 }
